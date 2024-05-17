@@ -49,6 +49,7 @@ a {
   padding: 5px;
   border: thin #31363f;
   border-radius: 7px;
+  box-shadow: 9px 9px 5px -1px rgba(219, 210, 219, 1);
 }
 
 .quote {
