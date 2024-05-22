@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Quote Generator</title>
   </head>
   <body>
@@ -17,15 +18,16 @@
           autofocus="on"
           placeholder="Enter a topic"
           class="text-box"
+          id="user-instructions"
         />
         <input type="submit" class="button" />
       </form>
 
       <br />
       <div class="quote" id="text-quote">
-        <div>Text here</div>
+        <div></div>
         <br />
-        <div>Text here</div>
+        <div></div>
       </div>
       <br />
 
