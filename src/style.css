@@ -32,7 +32,7 @@ a {
 
 .text-box {
   font-size: 15px;
-  width: 300px;
+  width: 400px;
   height: 40px;
   padding: 5px;
   border-radius: 20px;
@@ -47,6 +47,7 @@ a {
   width: 100px;
   height: 40px;
   padding: 5px;
+  margin: 10px;
   border: thin #31363f;
   border-radius: 20px;
   box-shadow: 9px 9px 5px -1px rgba(219, 210, 219, 1);
@@ -59,4 +60,30 @@ a {
   box-shadow: 9px 9px 5px -1px rgba(242, 242, 242, 1);
   border-left: 3px solid #b51b75;
   line-height: 2;
+}
+
+.hint {
+  line-height: 2;
+  opacity: 0.6;
+  font-size: 13px;
+  margin-left: -250px;
+}
+
+.hidden {
+  display: none;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

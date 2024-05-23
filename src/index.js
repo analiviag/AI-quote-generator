@@ -17,7 +17,12 @@ function quoteForm(event) {
   let prompt = `Write a quote about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let hiddenQuote = document.querySelector("#text-quote");
+  hiddenQuote.classList.remove("hidden");
+  hiddenQuote.innerHTML = `<div class="generating"> Just a second, we're generating a quote about ${instructionsInput.value} for you.</div>`;
+
   axios.get(apiUrl).then(displayQuote);
 }
+
 let quoteGenerator = document.querySelector("#quote-generator-form");
 quoteGenerator.addEventListener("submit", quoteForm);

@@ -12,23 +12,22 @@
     <h1>AI Quote Generator</h1>
 
     <main class="container">
-      <form class="topic" id="quote-generator-form">
-        <input
-          type="text"
-          autofocus="on"
-          placeholder="Enter a topic"
-          class="text-box"
-          id="user-instructions"
-        />
-        <input type="submit" class="button" />
-      </form>
-
-      <br />
-      <div class="quote" id="text-quote">
-        <div></div>
-        <br />
-        <div></div>
+      <div class="form-container">
+        <form class="topic" id="quote-generator-form">
+          <input
+            type="text"
+            autofocus="on"
+            placeholder="Enter a topic you like and we'll generate a quote"
+            class="text-box"
+            id="user-instructions"
+          />
+          <input type="submit" class="button" />
+          <div class="hint">e.g. Flowers, Motivational, Inspirational, etc</div>
+        </form>
       </div>
+      <br />
+      <div class="quote hidden" id="text-quote"></div>
+
       <br />
 
       <footer>
